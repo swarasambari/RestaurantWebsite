@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function show_confirm() {
+        var r = confirm("Proceed And Confirm Your Order");
+        if (r == true) {
+
+            var x = confirm("Purchase Request Succesfull!                                                                                 For Placing order please pay the requested amount on bill received on your mail or number.");
+            if (x == true) {
+                window.location.href = 'wadproject.html';
+            }
+            else { alert("Purchase Unsuccesfull, Please try again"); }
+        }
+        else { alert("Purchase Unsuccesfull, Please try again"); }
+    }
+
+</script>
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=email],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=number],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=button] {
+        width: 50%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=button]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    h4 {
+        color: rgb(189, 4, 4);
+    }
+</style>
+
+<body>
+
+    <h3>Please Enter Your Details</h3>
+
+    <div>
+        <form>
+            <label>From Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <label>Your Email</label>
+            <input type="email" placeholder="Senders Email" required>
+            <label>Your Number</label>
+            <input type="number" placeholder="Senders Number" required>
+            <h4 align="right">*You will recieve the bill and amount to be paid on your email or number </h4>
+            <label>Get Bill Via</label>
+            <select id="bill" name="bill" required >
+                <option value="Email">Email</option>
+                <option value="Whatsapp" selected>Whatsapp</option>
+                <option value="Message">Message</option>
+            </select>
+            <label>To Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Name of who you want to send it to.." required>
+
+            <label>Send Via</label>
+            <select id="Send" name="Via" required>
+                <option value="Email">Email</option>
+                <option value="Whatsapp" selected>Whatsapp</option>
+                <option value="Message">Message</option>
+            </select>
+            <label>Reciever's Email/Number</label>
+            <input type="text" placeholder="Number or Email of reciever" required>
+            <h4 align="right">*Gift Card will be sent only after succesfull payment of requested price </h4>
+            <input type="button" value="Submit" onclick="show_confirm()">
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@200&family=Lobster&family=Teko:wght@600&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Salsa Fiesta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        .home
+            {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            animation-name: lock;
+            animation-delay: 3s;
+            animation-duration: 0s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+        
+
+        body {
+            background-color: #1A1A1A;
+        }
+
+        header {
+            background-color: white;
+            height: 94px;
+            width: 1900px;
+            position: fixed;
+            z-index: 10;
+        }
+
+        .menu {
+            float: left;
+            height: 100px;
+            width: 190px;
+        }
+
+        .taco {
+            height: 100vh;
+            width: 100%;
+        }
+
+
+        li {
+            display: inline-block;
+            padding: 28px;
+            font-family: 'Tilt Warp', cursive;
+            color: black;
+            font-size: large;
+        }
+
+        .pp {
+            transform: translate(10px);
+        }
+
+        .btn {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(250px);
+        }
+
+        .btnp {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(220px);
+        }
+
+        .btn:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+
+        .btnp:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+
+        .cl {
+            text-align: center;
+            color: white;
+            font-family: 'Tilt Warp', cursive;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 82px;
+            /* color:rgb(131, 239, 243); */
+            color: black;
+            /* border: 3px rgb(12, 12, 11) dashed; */
+            font-family: 'Lobster', cursive;
+            /* font-family: 'Teko', sans-serif; */
+            text-shadow: 0 0 5px white, 0 0 5px white;
+            padding: 20px;
+            font-family: 'Tilt Warp', cursive;
+        }
+
+        h1 {
+            font-family: 'Tilt Warp', cursive;
+            font-size: 40px;
+        }
+
+        .rtt {
+            rotate: 180deg;
+        }
+
+        .ptp {
+            margin: 10px;
+            padding: 10px;
+            font-family: 'Kanit', sans-serif;
+            font-size: large;
+        }
+
+        .htp {
+            margin: 105px 0px 0px 0px;
+            /* padding: 20px; */
+            color: white;
+        }
+
+        .bg {
+            /* background-image: url("res.jpg"); */
+            color: white;
+            height: 70vh;
+        }
+
+        .ftr {
+            font-family: 'Kanit', sans-serif;
+            font-size: large;
+            margin: 20px 0px 0px 0px;
+            color: white;
+            float: right;
+            margin: 40px 170px 0px 0px;
+        }
+
+        .imtb {
+            display: inline-block;
+            height: 142px;
+            width: 212px;
+            margin: 30px 0px 0px 95px;
+
+        }
+
+        /* .blb{
+            background-color: #C6E2E9;
+            height: 300px;
+        } */
+        .infb {
+            float: left;
+            transform: translate(230px, 170px);
+        }
+
+        .infbk {
+            float: left;
+            transform: translate(280px, 170px);
+        }
+
+        .inp {
+            margin: 40px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .inl {
+            display: inline-block;
+            height: 250px;
+            width: 450px;
+        }
+
+        #bdr {
+            border: 12px solid #1A1A1A;
+        }
+
+        .imgl {
+            margin-bottom: -25px;
+            margin-left: -2px;
+            width: 352px;
+        }
+
+        #h5t {
+            font-size: large;
+        }
+
+        .hhp {
+            font-size: 18px;
+            margin-bottom: -17px;
+            margin-top: 5px;
+        }
+
+        .b {
+            font-weight: 1300;
+        }
+    </style>
+</head>
+
+<body class="home">
+    <header>
+
+        <img src="TRANSLOGO.png" class="menu">
+        <div class="pp">
+            <ol><a href="wadproject.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="hours.html">
+                    <li>
+                        Hours
+                    </li>
+                </a>
+                <a href="menu.html">
+                    <li>
+                        Menu
+                    </li>
+                </a>
+                <a href="giftcards.html">
+                    <li>
+                        Gift Cards
+                    </li>
+                </a>
+                <a href="privateevents.html">
+                    <li>
+                        Private Events
+                    </li>
+                </a>
+                <a href="meettheteam.html">
+                    <li>
+                       Team
+                    </li>
+                </a>
+                <a href="orderonline.html">
+                    <li> <input type="button" value="Order Online" class="btn"></li>
+                </a>
+                <a href="reservation.html">
+                    <li> <input type="button" value="Reservations" class="btnp"></li>
+                </a>
+
+            </ol>
+        </div>
+
+    </header>
+    <div class="cl">
+        <img src="bg3.jpg" class="taco">
+        <div class="centered">
+            <img src="data:image/png;base64,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"
+                class="imgl">
+
+            <h5> Food Worth Sharing</h5>
+            <h6 id="h5t">New Limited Time Items
+                & New Happy Hour are Here!</h6>
+            <!-- <img src="../img/hero-embellishment.svg"> -->
+        </div>
+    </div>
+    <div class="bg">
+        <h1 align="center" class="htp">About Us</h1>
+        <p class="ptp" align="center">Welcome to our Mexican restaurant! We are a family-owned and operated
+            establishment that takes great pride in serving delicious, authentic Mexican cuisine. Our mission is to
+            provide a memorable dining experience for all of our customers.
+
+            Our chefs use only the freshest ingredients to create our mouth-watering dishes, and our menu features a
+            variety of classic Mexican favorites as well as unique creations you won't find anywhere else.
+            We believe that dining out should be more than just a meal - it should be an experience. That's why we have
+            created a warm and inviting atmosphere that is perfect for date nights, family dinners, or even just a night
+            out with friends. Our friendly staff is always happy to assist with any questions or recommendations, and we
+            strive to make every customer feel at home. This is an initative by <span style="color: #FFF700">Swara,
+                Atharva, Lavanya and Sahil- SALS a FIESTA [Salsa Fiesta]. </span>
+            Our objective is to introduce the authentic flavors of Mexico to India. With a passion for Mexican cuisine
+            and culture, our team aims to provide a unique and enjoyable experience to their customers.
+
+            Thank you for considering our restaurant for your next dining experience. We can't wait to welcome you and
+            introduce you to the flavors of Mexico!</p>
+
+        <div class="inp">
+            <marquee loop="200" direction="right" scrollamount="15s">
+                <img src="burger.jpg" class="inl" id="bdr">
+                <img src="tacomeal.jpg" class="inl" id="bdr">
+                <img src="burrito.jpg" class="inl" id="bdr">
+                <img src="Churros.jpg" class="inl" id="bdr">
+                <img src="Mexican-Hot-Chocolate.jpg" class="inl" id="bdr">
+                <img src="burger.jpg" class="inl" id="bdr"><img src="tacomeal.jpg" class="inl" id="bdr"><img
+                    src="burrito.jpg" class="inl" id="bdr"><img src="Churros.jpg" class="inl" id="bdr"><img
+                    src="Mexican-Hot-Chocolate.jpg" class="inl" id="bdr"><img src="burger.jpg" class="inl" id="bdr"><img
+                    src="tacomeal.jpg" class="inl" id="bdr"><img src="tacomeal.jpg" class="inl" id="bdr"><img
+                    src="burrito.jpg" class="inl" id="bdr"><img src="Churros.jpg" class="inl" id="bdr"><img
+                    src="Mexican-Hot-Chocolate.jpg" class="inl" id="bdr"><img src="burger.jpg" class="inl" id="bdr"><img
+                    src="tacomeal.jpg" class="inl" id="bdr"><img src="burrito.jpg" class="inl" id="bdr"><img
+                    src="Churros.jpg" class="inl" id="bdr"><img src="Mexican-Hot-Chocolate.jpg" class="inl"
+                    id="bdr"><img src="burger.jpg" class="inl" id="bdr"><img src="tacomeal.jpg" class="inl"
+                    id="bdr"><img src="burrito.jpg" class="inl" id="bdr"><img src="Churros.jpg" class="inl"
+                    id="bdr"><img src="Mexican-Hot-Chocolate.jpg" class="inl" id="bdr"><img src="burger.jpg" class="inl"
+                    id="bdr"><img src="tacomeal.jpg" class="inl" id="bdr"><img src="burrito.jpg" class="inl"
+                    id="bdr"><img src="Churros.jpg" class="inl" id="bdr"><img src="Mexican-Hot-Chocolate.jpg"
+                    class="inl" id="bdr"><img src="burger.jpg" class="inl" id="bdr"><img src="tacomeal.jpg" class="inl"
+                    id="bdr"><img src="burrito.jpg" class="inl" id="bdr"><img src="Churros.jpg" class="inl"
+                    id="bdr"><img src="Mexican-Hot-Chocolate.jpg" class="inl" id="bdr">
+            </marquee>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="blb">
+            <h1 align="center" class="htp">#SALSAFIESTAFAMILY</h1>
+            <img src="TRANSLOGO.png" class="imtb">
+            <a href="https://www.instagram.com/">
+                <img src="insta.png" class="infb"></a>
+            <a href="https://www.facebook.com/">
+                <img src="facebook.png" class="infbk"></a>
+            <p class="ftr">Address:- Shop no 5, Sane Guruji Marg, Near Charni Road Railway Station, Charni Road,
+                Mumbai-400017 <br>
+
+                Contact us:- 8600781115/ 8850088464/ 9004235900/ 9619801371<br>
+
+                Mail:- salsafiestamex@gmail.com <br>
+
+                Insta:-@salsafiestamumbai<br>
+
+                Facebook:-@salsafiestamumbai <br>
+                Write a review for us on: &nbsp;
+                <a href="review.html">Review</a>
+            </p>
+
+    </footer>
+    </div>
+</body>
+
+</html>

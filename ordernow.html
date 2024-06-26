@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@200&family=Lobster&family=Teko:wght@600&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        function ok() {
+            alert("Item Added Succesfully");
+            document.getElementById("button").style.backgroundColor = '#911';
+        }
+
+        function show_confirm() {
+        var r = confirm("Proceed And Confirm Your Order");
+        if (r == true) {
+
+            var x = confirm("Purchase Request Succesfull!                                                                   For Placing order please pay the requested amount on bill received on your mail or number.");
+            if (x == true) {
+                window.location.href = 'wadproject.html';
+            }
+            else { alert("Purchase Unsuccesfull, You can continue selecting-Progress is saved"); }
+        }
+        else { alert("Purchase Unsuccesfull, You can continue selecting-Progress is saved"); }
+    }
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+
+            font-family: 'Tilt Warp', cursive;
+
+        }
+
+        .bgm {
+            background-color: antiquewhite;
+            height: 200vh;
+            width: 100vw;
+        }
+
+
+        .inp {
+            margin: 40px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .inl {
+            margin-top: 20px;
+            display: inline-block;
+            height: 190px;
+            width: 280px;
+        }
+
+        .inlp {
+            margin-top: 20px;
+            display: inline-block;
+            /* height: 190px; */
+            width: 280px;
+        }
+       
+        
+        .mrgn {
+            margin-top: 25px;
+            /* background-color: white; */
+            height: 26px;
+            width: 100vw;
+        }
+
+        .odr {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            margin-top: 18px;
+        }
+        .odr:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5) ;
+        }
+        
+        .joinBtn1 {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            margin-top: 18px;
+            color: white;
+            display: inline-block cursor: pointer;
+        }
+
+        .joinBtn1:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5) ;
+        }
+        
+
+        .odrp {
+            height: 50px;
+            width: 250px;
+            background-color: rgb(88, 242, 5);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(88, 242, 5);
+            border-radius: 5px;
+            margin-top: 18px;
+            transform: translate(650px);
+            font-family: 'Kanit', sans-serif;
+            font-size: x-large;
+            font-weight: 300;
+        }
+
+        .joinBtn {
+            height: 50px;
+            width: 250px;
+            background-color: rgb(242, 29, 5);
+            border: 2px solid rgb(242, 29, 5);
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 18px;
+            transform: translate(650px);
+            font-family: 'Kanit', sans-serif;
+            font-size: x-large;
+            color: white;
+            display: inline-block cursor: pointer;
+        }
+
+        .joinBtn:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5) ;
+        }
+
+
+
+        #a1 {
+            transform: translate(85px);
+        }
+
+        #a2 {
+            transform: translate(35px);
+        }
+
+        /* #a3{
+            transform: translate(85px);
+        } */
+        #a4 {
+            transform: translate(-35px);
+        }
+
+        #a5 {
+            transform: translate(-85px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center" class="mrgn">Choose What you would like to have</h1>
+    <div class="bgm">
+        <div class="inp">
+            <img src="shrimpclivache.jpg" class="inl"><img src="quosofudino.jpg" class="inl"><img src="sopes.jpg"
+                class="inl"><img src="molepoblano.jpg" class="inl"><img src="cochinitapibil.jpg" class="inl">
+            <h1 align="center" class="inlp">Shrimp Ceviche<br>
+                Rs.300</h1>
+            <h1 align="center" class="inlp">Queso Fundido
+                <br>
+                Rs.200
+            </h1>
+            <h1 align="center" class="inlp">Sopes<br>
+                Rs.250</h1>
+            <h1 align="center" class="inlp">Mole Poblano<br>
+                Rs.400</h1>
+            <h1 align="center" class="inlp">Cochinita Pibil <br>
+                Rs.320</h1>
+            <input type="button" class="joinBtn1" id="a1" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" id="a2" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" id="a4" value="Add To Cart" onclick=ok()></a>
+            <input type="button" class="odr" id="a5" value="Add To Cart" onclick=ok()>
+        </div>
+        <div class="inp">
+            <img src="chilesennogado.jpg" class="inl"><img src="mexicancorn.jpg" class="inl"><img
+                src="Refried-Beans-.jpg" class="inl"><img src="mexican-rice-6.jpg" class="inl"><img src="flan.jpg"
+                class="inl">
+            <h1 align="center" class="inlp">Chiles En Nogada<br>
+                Rs.120</h1>
+            <h1 align="center" class="inlp">Mexican Corn<br>
+                Rs.250</h1>
+            <h1 align="center" class="inlp">Refried Beans<br>
+                Rs.260</h1>
+            <h1 align="center" class="inlp">Mexican Rice<br>
+                Rs.350</h1>
+            <h1 align="center" class="inlp">Flan<br>
+                Rs.190 </h1>
+            <input type="button" class="odr" id="a1" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" id="a2" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" id="a4" value="Add To Cart" onclick=ok()></a>
+            <input type="button" class="odr" id="a5" value="Add To Cart" onclick=ok()>
+        </div>
+        <div class="inp">
+            <img src="Churros.jpg" class="inl"><img src="Tres-leches.jpg" class="inl"><img src="maragrita.jpg"
+                class="inl"><img src="Horchata.jpg" class="inl"><img src="Mexican-Hot-Chocolate.jpg" class="inl">
+            <h1 align="center" class="inlp">Churros<br>
+                Rs.320</h1>
+            <h1 align="center" class="inlp">Tres Leches Cake <br>
+                Rs.350</h1>
+            <h1 align="center" class="inlp">Margarita <br>
+                Rs.99</h1>
+            <h1 align="center" class="inlp">Horchata <br>
+                Rs.80</h1>
+            <h1 align="center" class="inlp">Hot Chocolate<br>
+                Rs.140 </h1>
+            <input type="button" class="odr" id="a1" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" id="a2" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" value="Add To Cart" onclick=ok()>
+            <input type="button" class="odr" id="a4" value="Add To Cart" onclick=ok()></a>
+            <input type="button" class="odr" id="a5" value="Add To Cart" onclick=ok()>
+        </div>
+        <!-- <a href="THANKYOU.html" align="center">  -->
+            <input type="button" class="joinBtn" value="Confirm and Proceed"
+                onclick="show_confirm()">
+            <!-- </a> -->
+    </div>
+
+</body>
+
+</html>

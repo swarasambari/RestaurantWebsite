@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gift Cards</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@400&family=Lobster&family=Teko:wght@600&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin-top: -110px;
+            background-color: white;
+            height: 94px;
+            width: 1900px;
+            position: fixed;
+            z-index: 10;
+            margin-bottom: 40px;
+        }
+
+        .menu {
+            float: left;
+            height: 100px;
+            width: 190px;
+        }
+
+        .taco {
+            height: 130vh;
+            width: 100%;
+        }
+
+
+        li {
+            display: inline-block;
+            padding: 28px;
+            font-family: 'Tilt Warp', cursive;
+            color: black;
+            font-size: large;
+        }
+
+        .pp {
+            transform: translate(10px);
+        }
+
+        .btn {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(250px);
+        }
+
+        .btnp {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(220px);
+
+        }
+
+        .btnn {
+            /* position: relative; */
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(-520px);
+            /* margin-top: -50px;
+            z-index: 20; */
+        }
+
+        .btn:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+
+        .btnp:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+
+        .btnn:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+
+        h1 {
+
+            margin-top: 110px;
+            color: antiquewhite;
+            background-color: #1A1A1A;
+            font-family: 'Tilt Warp', cursive;
+
+
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            display: block;
+
+        }
+
+        .imghw {
+            display: flex;
+            height: 500px;
+            width: 80vw;
+            justify-content: center;
+            align-content: center;
+            transform: translate(150px);
+            margin-top: 50px;
+            display: inline-block;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .container img {
+            width: 95vw;
+            height: 600px;
+            margin: 30px;
+
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 55%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: whitesmoke;
+            color: black;
+            font-size: 16px;
+            padding: 1px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container .btn:hover {
+            background-color: rgb(88, 242, 5);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .myDIV:hover+.hide {
+            display: block;
+        }
+
+        img:hover {
+            webkit-filter: blur(4px);
+            filter: blur(3px);
+        }
+
+        .animate__animated.animate__bounce {
+            --animate-duration: 5s;
+        }
+
+        :root {
+
+            --animate-delay: 1.9s;
+        }
+    </style>
+    <script>
+        function redir() {
+            window.location.href = "info.html";
+        }    
+    </script>
+</head>
+
+<body bgcolor="antiquewhite">
+    <header>
+
+        <img src="TRANSLOGO.png" class="menu">
+        <div class="pp">
+            <ol><a href="wadproject.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="hours.html">
+                    <li>
+                        Hours
+                    </li>
+                </a>
+                <a href="menu.html">
+                    <li>
+                        Menu
+                    </li>
+                </a>
+                <a href="giftcards.html">
+                    <li>
+                        Gift Cards
+                    </li>
+                </a>
+                <a href="privateevents.html">
+                    <li>
+                        Private Events
+                    </li>
+                </a>
+                <a href="meettheteam.html">
+                    <li>
+                       Team
+                    </li>
+                </a>
+                <a href="orderonline.html">
+                    <li> <input type="button" value="Order Online" class="btn"></li>
+                </a>
+                <a href="reservation.html">
+                    <li> <input type="button" value="Reservations" class="btnp"></li>
+                </a>
+
+            </ol>
+        </div>
+
+    </header>
+    <h1 align="center">Choose And Gift the Card of your choice to your family and friends!</h1>
+    <div class="wrap">
+        <div class="container">
+            <img src="gc2.png" class="imghw myDIV animate__animated animate__lightSpeedInRight"><button
+                class="btn hide " onclick="redir()">Buy</button>
+        </div>
+        <div class="container">
+            <img src="gc3.png" class="imghw myDIV animate__animated animate__lightSpeedInLeft animate__delay-8s">
+            <button class="btn hide " onclick="redir()">Buy</button>
+        </div>
+        <div class="container">
+            <img src="gc5.png" class="imghw myDIV animate__animated animate__lightSpeedInRight animate__delay-12s">
+            <button class="btn hide " onclick="redir()">Buy</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

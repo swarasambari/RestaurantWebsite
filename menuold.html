@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@400&family=Lobster&family=Teko:wght@600&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+       
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+      
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin-top: 0px;
+            background-color: white;
+            height: 94px;
+            width: 1900px;
+            position: fixed;
+            z-index: 10;
+            margin-bottom: 40px;
+        }
+
+        .menu {
+            float: left;
+            height: 100px;
+            width: 190px;
+        }
+
+        .taco {
+            height: 130vh;
+            width: 100%;
+        }
+
+
+        li {
+            display: inline-block;
+            padding: 28px;
+            font-family: 'Tilt Warp', cursive;
+            color: black;
+            font-size: large;
+        }
+
+        .pp {
+            transform: translate(10px);
+        }
+
+        .btn {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(250px);
+        }
+
+        .btnp {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(220px);
+        }
+
+        .img {
+
+            margin-top: 95px;
+            transform: translate(330px);
+            height: 1000px;
+            width: 845px;
+        }
+
+        .im {
+
+            margin-top: 0px;
+            transform: translate(330px);
+            height: 1000px;
+            width: 845px;
+        }
+
+        .dropbtn {
+            margin-left: 1349px;
+            float: left;
+            margin-top: 675px;
+            height: 50px;
+            width: 180px;
+            position: fixed;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #061da1;
+        }
+
+
+
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            background-color: #f1f1f1;
+            min-width: 180px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin-top: 462px;
+margin-left: 1349px;
+
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .btn:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+
+        .btnp:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5);
+        }
+    </style>
+</head>
+
+<body bgcolor="antiquewhite">
+    <header>
+
+        <img src="TRANSLOGO.png" class="menu">
+        <div class="pp">
+            <ol><a href="wadproject.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="hours.html">
+                    <li>
+                        Hours
+                    </li>
+                </a>
+                <a href="menu.html">
+                    <li>
+                        Menu
+                    </li>
+                </a>
+                <a href="giftcards.html">
+                    <li>
+                        Gift Cards
+                    </li>
+                </a>
+                <a href="privateevents.html">
+                    <li>
+                        Private Events
+                    </li>
+                </a>
+                <a href="meettheteam.html">
+                    <li>
+                       Team
+                    </li>
+                </a>
+                <a href="orderonline.html">
+                    <li> <input type="button" value="Order Online" class="btn"></li>
+                </a>
+                <a href="reservation.html">
+                    <li> <input type="button" value="Reservations" class="btnp"></li>
+                </a>
+
+            </ol>
+        </div>
+
+    </header>
+    <video autoplay muted id="myVideo" loop>
+        <source src="wave.mp4">
+    </video>
+    <!-- <video autoplay muted id="myVideo" loop>
+        <source src="Pexelshor.mp4">
+    </video> -->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+            <h2 align="center">Menu Search</h2>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+           
+            <a href="#sides">Side dishes</a>
+            <a href="#main">Main Course</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#beverages">Beverages</a>
+            <a href="#appetizers">Appetizers</a>
+        </div>
+    </div>
+    <div id="beverages">
+        <img class="img" src="menubeverages.png">
+    </div>
+    <div id="appetizers">
+        <img class="im" src="menuappetiz.png">
+    </div>
+    <div id="sides">
+        <img class="im" src="menusides.png">
+    </div>
+    <div id="main">
+        <img class="im" src="menumainc.png">
+    </div>
+    <div id="desserts">
+        <img class="im" src="menudesserts.png">
+    </div>
+
+
+
+</body>
+
+</html>

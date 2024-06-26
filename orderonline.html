@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Information</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@200&family=Lobster&family=Teko:wght@600&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        header {
+            background-color: black;
+            height: 94px;
+            width: 1900px;
+            position: fixed;
+            z-index: 10;
+        }
+
+        .menu {
+            float: left;
+            height: 100px;
+            width: 190px;
+        }
+
+        .taco {
+            height: 130vh;
+            width: 100%;
+        }
+
+        li {
+            display: inline-block;
+            padding: 28px;
+            font-family: 'Tilt Warp', cursive;
+            color: white;
+            font-size: large;
+        }
+
+        .pp {
+            transform: translate(10px);
+        }
+
+        .btn {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(250px);
+        }
+
+        .btnp {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(220px);
+        }
+        .btn:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5) ;
+        }
+        .btnp:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5) ;}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("resotsed.jpg");
+            /* height: 1500px;
+            width: 1900px; */
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .clan {
+            background-color: antiquewhite;
+            height: 830px;
+            width: 40vw;
+
+        }
+
+        .sec {
+            width: unset;
+            height: 100%;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 36%;
+        }
+
+        .cntr {
+            text-align: center;
+        }
+
+        .h1tp {
+            max-width: 100%;
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Tilt Warp', cursive;
+        }
+
+        /* .fm {
+            width: 100%;
+        }
+
+        .type {
+            margin: 0 auto 16px auto;
+            max-width: 640px;
+        }
+
+        .typ {
+            position: relative;
+            display: flex;
+            align-items: stretch;
+        } */
+        table {
+            display: flex;
+            border: 2px solid black;
+        
+            margin: 32px;
+            padding: 0px 0px 0px 35px;
+        }
+
+        td,
+        th {
+            text-align: initial;
+            width: 400px;
+            height: 30px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .algn{
+            width: 144px;
+            height: 21px;
+            align-items: inherit;
+        }
+        .odr{
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(10px);
+        }
+        .odr:hover {
+            background-color: rgb(88, 242, 5);
+            border: 2px solid rgb(88, 242, 5) ;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <img src="TRANSLOGO.png" class="menu">
+        <div class="pp">
+            <ol><a href="wadproject.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="hours.html">
+                    <li>
+                        Hours
+                    </li>
+                </a>
+                <a href="menu.html">
+                    <li>
+                        Menu
+                    </li>
+                </a>
+                <a href="giftcards.html">
+                    <li>
+                        Gift Cards
+                    </li>
+                </a>
+                <a href="privateevents.html">
+                    <li>
+                        Private Events
+                    </li>
+                </a>
+                <a href="meettheteam.html">
+                    <li>
+                       Team
+                    </li>
+                </a>
+                <a href="orderonline.html">
+                    <li> <input type="button" value="Order Online" class="btn"></li>
+                </a>
+                <a href="reservation.html">
+                    <li> <input type="button" value="Reservations" class="btnp"></li>
+                </a>
+
+            </ol>
+        </div>
+
+    </header>
+    <div class="clan">
+        <section class="sec">
+            <div class="cntr">
+                <h1 class="h1tp"> Welcome To Salsa Fiesta </h1>
+            </div>
+            <div class="aar">
+                <table>
+                    <tr>
+                        <th>Type:</th>
+                        <td><select name="dropdown" class="algn">
+                                <option value="Pick Up" selected="">Pick Up</option>
+                                <option value="Delivery">Delivery</option>
+                            </select> </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Name: </th>
+                        <td><input type="text" class="algn" required></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Address:</th>
+                        <td><input type="textarea" class="algn" required> </td>
+                    </tr>
+                </table>
+            </div>
+            <a href="ordernow.html"> <input type="submit" class="odr" value="Order"></a>
+        </section>
+
+    </div>
+</body>
+
+</html>

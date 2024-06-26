@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@200&family=Lobster&family=Teko:wght@600&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        function show_confirm() {
+            var r = confirm("Proceed And Confirm Table");
+            if (r == true) {
+
+                var x = confirm("Table Reserved");
+                if (x == true) {
+                    window.location.href = 'wadproject.html';
+                }
+
+            }
+            else { alert("Reservation Unsuccesfull, Please try again"); }
+        } 
+    </script>
+    <style>
+        header {
+            background-color: white;
+            height: 94px;
+            width: 1900px;
+            position: fixed;
+            z-index: 50;
+            margin-top: -100px;
+            color: black;
+        }
+
+        .menu {
+            float: left;
+            height: 100px;
+            width: 190px;
+        }
+
+        .taco {
+            height: 130vh;
+            width: 100%;
+        }
+
+        li {
+            display: inline-block;
+            padding: 28px;
+            font-family: 'Tilt Warp', cursive;
+            color: black;
+            font-size: large;
+        }
+
+        .pp {
+            transform: translate(10px);
+        }
+
+        .btn {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(250px);
+        }
+
+        .btnp {
+            height: 37px;
+            width: 122px;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            display: inline-block;
+            border: 2px solid rgb(241, 90, 41);
+            border-radius: 5px;
+            transform: translate(220px);
+        }
+
+        .btn:hover {
+            background-color: rgb(88, 242, 5);
+            /* border: 2px solid rgb(88, 242, 5); */
+        }
+
+        .btnp:hover {
+            background-color: rgb(88, 242, 5);
+            /* border: 2px solid rgb(88, 242, 5); */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-family: 'Tilt Warp', cursive;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=email],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=number],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=time],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=date],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=button] {
+            width: 100%;
+            background-color: rgb(241, 90, 41);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: rgb(88, 242, 5);
+
+        }
+
+        .divb {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 35%;
+            height: 80%;
+        }
+
+        h5 {
+            color: rgb(189, 4, 4);
+        }
+
+        label {
+            color: black;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            z-index: 50;
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -10;
+        }
+    </style>
+</head>
+
+<body bgcolor="black" text="white">
+    <video autoplay muted id="myVideo" loop>
+        <source src="wave.mp4">
+    </video>
+    <header>
+
+        <img src="TRANSLOGO.png" class="menu">
+        <div class="pp">
+            <ol><a href="wadproject.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="hours.html">
+                    <li>
+                        Hours
+                    </li>
+                </a>
+                <a href="menu.html">
+                    <li>
+                        Menu
+                    </li>
+                </a>
+                <a href="giftcards.html">
+                    <li>
+                        Gift Cards
+                    </li>
+                </a>
+                <a href="privateevents.html">
+                    <li>
+                        Private Events
+                    </li>
+                </a>
+                <a href="meettheteam.html">
+                    <li>
+                       Team
+                    </li>
+                </a>
+                <a href="orderonline.html">
+                    <li> <input type="button" value="Order Online" class="btn"></li>
+                </a>
+                <a href="reservation.html">
+                    <li> <input type="button" value="Reservations" class="btnp"></li>
+                </a>
+
+            </ol>
+        </div>
+
+    </header>
+
+    <h1 align="center">Please Enter The Below Details For Reservating A Table</h1>
+    <div class="cont">
+        <div class="divb">
+            <form>
+                <label>Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Please enter your name..." required>
+                <label>Contact Number (Prefferably Whatsapp)</label>
+                <input type="number" placeholder="Enter your number..." required>
+                <h5 align="right">*You will get a link of reserved table confirmation on the provided number or email
+                </h5>
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" required>
+                <label>Total Number Of People</label>
+                <select id="People" required>
+                    <option value="1 Person">1 Person</option>
+                    <option value="2 People" selected>2 People</option>
+                    <option value="3 People">3 People</option>
+                    <option value="4 People">4 People</option>
+                    <option value="5 People">5 People</option>
+                    <option value="6 People">6 People</option>
+                    <option value="7 People">7 People</option>
+                    <option value="8 People">8 People</option>
+                    <option value="9 People">9 People</option>
+                    <option value="10 People">10 People</option>
+                    <option value="11 People">11 People</option>
+                    <option value="12 People">12 People</option>
+                </select>
+                <label>Time and Date</label>
+                <input type="date" id="lname" name="lastname" required>
+                <input type="time" id="lname" name="lastname" required>
+
+                <label>Recieve Link On</label>
+                <select id="Send" name="Via" required>
+                    <option value="Email">Email</option>
+                    <option value="Whatsapp" selected>Whatsapp</option>
+                    <option value="Message">Message</option>
+                </select>
+                <!-- <h4 align="right">*Gift Card will be sent only after succesfull payment of requested price </h4> -->
+                <input type="button" value="Submit" onclick="show_confirm()">
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
